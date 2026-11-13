@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonaKit Promotion AI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PersonaKit Promotion AI</h1>
+            <p>Generator Konten Promosi & Pemasaran Berbasis AI</p>
+        </header>
+        <main>
+            <div class="card">
+                <h2>Buat Promosi</h2>
+                <form id="promoForm">
+                    <label for="productName">Nama Produk / Layanan:</label>
+                    <input type="text" id="productName" required placeholder="Contoh: Depo Bip Bahan Bangunan">
+                    
+                    <label for="targetAudience">Target Audiens:</label>
+                    <input type="text" id="targetAudience" required placeholder="Contoh: Kontraktor & Pemilik Rumah">
+                    
+                    <label for="promoDetails">Detail Promo / Keunggulan:</label>
+                    <textarea id="promoDetails" rows="4" required placeholder="Contoh: Diskon khusus akhir tahun dan undian motor scooter..."></textarea>
+                    
+                    <button type="submit" id="submitBtn">Generate Promosi AI</button>
+                </form>
+            </div>
+            
+            <div class="card result-card">
+                <h2>Hasil AI</h2>
+                <div id="resultContent" class="result-box">
+                    <p class="placeholder-text">Hasil promosi akan muncul di sini setelah di-generate...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
